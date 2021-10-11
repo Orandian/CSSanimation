@@ -7,11 +7,12 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #001d30;
-    animation: changeBg 5s linear infinite;
+    overflow: hidden;
+    animation: changebg 5s linear infinite;
 }
-@keyframes changeBg{
+@keyframes changebg{
     to{
         filter: hue-rotate(360deg);
     }
@@ -20,7 +21,7 @@ section{
     position: absolute;
     width: 150px;
     height: 150px;
-    background: linear-gradient(to top, #001d30 40%, #51eeee);
+    background: linear-gradient(to top, #001d30 40%, #51eeee) ;
     border-radius: 50%;
     animation: rotate 2s linear infinite;
 }
@@ -32,7 +33,7 @@ section{
 .loader::before{
     content: '';
     position: absolute;
-    background: #001d30;
+    background-color: #001d30;
     inset: 20px 20px 0 0;
     border-radius: 50%;
 }
@@ -43,7 +44,7 @@ section{
     right: -8px;
     width: 40px;
     height: 40px;
-    background: #51eeee;
+    background-color: #51eeee;
     border-radius: 50%;
-    box-shadow: 0 0 5px #51eeee, 0 0 25px #51eeee, 0 0 50px #51eeee, 0 0 75px #51eeee;
+    box-shadow: 0 0 25px #51eeee, 0 0 50px #51eeee, 0 0 75px #51eeee, 0 0 100px #51eeee;
 }

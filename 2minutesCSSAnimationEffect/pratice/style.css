@@ -1,15 +1,15 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
+    height: 100vh;
     background-color: #001d30;
+    overflow: hidden;
     animation: changeBg 5s linear infinite;
 }
 @keyframes changeBg{
@@ -44,7 +44,7 @@ section{
     right: -8px;
     width: 40px;
     height: 40px;
-    background: #51eeee;
+    background-color: #51eeee;
     border-radius: 50%;
-    box-shadow: 0 0 5px #51eeee, 0 0 25px #51eeee, 0 0 50px #51eeee, 0 0 75px #51eeee;
+    box-shadow: 0 0 25px #51eeee, 0 0 35px #51eeee, 0 0 75px #51eeee, 0 0 100px #51eeee;
 }
